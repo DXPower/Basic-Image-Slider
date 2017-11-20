@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Slider CSS3</title>
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+    <script src="js/slider.js"></script>
+</head>
+<body>
+<div class="slider">
+    <div class="slider-buttons">
+        <div class="prev" onclick="sliderPrevSlide()"><span>&lt;</span></div>
+        <div class="next" onclick="sliderNextSlide()"><span>&gt;</span></div>
+    </div>
+    <div class="slider-content">
+        <div class="slide current">
+            <div class="img-holder">
+                <img class="slide-img" src="images/France.jpg">
+            </div>
+            <a class="slider-text slider-link" href="http://www.google.com">
+                <p>France!</p>
+            </a>
+        </div>
+        <div class="slide next">
+            <div class="img-holder">
+                <img class="slide-img" src="images/Ibiza.jpg">
+            </div>
+            <div class="slider-text">
+                <p>Ibiza!</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="img-holder">
+                <img class="slide-img" src="images/Amsterdam.jpg">
+            </div>
+            <div class="slider-text">
+                <p>Amsterdam!</p>
+            </div>
+        </div>
+        <div class="slide">
+            <div class="img-holder">
+                <img class="slide-img" src="images/Amsterdam.jpg">
+            </div>
+            <div class="slider-text">
+                <p>A new one!</p>
+            </div>
+        </div>      
+    </div>
+</div>	
+    <script>
+        slides = document.querySelectorAll(".slide");
+        lastSlide = slides.length - 1;
+    </script>
+</body>
+</html>
